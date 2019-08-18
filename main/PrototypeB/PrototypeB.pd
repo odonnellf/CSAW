@@ -1,0 +1,161 @@
+#N canvas 466 62 1370 800 10;
+#X obj 192 567 vsl 15 128 0.001 0.999 0 0 empty vol1 empty 0 -9 0 10
+-262144 -1 -1 0 1;
+#X obj 283 567 vsl 15 128 0.001 0.999 0 0 empty vol2 empty 0 -9 0 10
+-262144 -1 -1 0 1;
+#X obj 373 567 vsl 15 128 0.001 0.999 0 0 empty vol3 empty 0 -9 0 10
+-262144 -1 -1 0 1;
+#X obj 470 567 vsl 15 128 0.001 0.999 0 0 empty vol4 empty 0 -9 0 10
+-262144 -1 -1 0 1;
+#X obj 576 567 vsl 15 128 0.001 0.999 0 0 empty vol5 empty 0 -9 0 10
+-262144 -1 -1 0 1;
+#X obj 675 567 vsl 15 128 0.001 0.999 0 0 empty vol6 empty 0 -9 0 10
+-262144 -1 -1 0 1;
+#X obj 779 567 vsl 15 128 0.001 0.999 0 0 empty vol7 empty 0 -9 0 10
+-262144 -1 -1 0 1;
+#X obj 878 567 vsl 15 128 0.001 0.999 0 0 empty vol8 empty 0 -9 0 10
+-262144 -1 -1 0 1;
+#X obj 192 502 moonlib/mknob 25 100 0.001 0.999 0 0 empty pan1 empty
+-2 -6 0 8 -262144 -1 -1 0 1;
+#X obj 283 502 moonlib/mknob 25 100 0.001 0.999 0 0 empty pan2 empty
+-2 -6 0 8 -262144 -1 -1 0 1;
+#X obj 373 502 moonlib/mknob 25 100 0.001 0.999 0 0 empty pan3 empty
+-2 -6 0 8 -262144 -1 -1 0 1;
+#X obj 470 502 moonlib/mknob 25 100 0.001 0.999 0 0 empty pan4 empty
+-2 -6 0 8 -262144 -1 -1 0 1;
+#X obj 576 502 moonlib/mknob 25 100 0.001 0.999 0 0 empty pan5 empty
+-2 -6 0 8 -262144 -1 -1 0 1;
+#X obj 675 502 moonlib/mknob 25 100 0.001 0.999 0 0 empty pan6 empty
+-2 -6 0 8 -262144 -1 -1 0 1;
+#X obj 779 502 moonlib/mknob 25 100 0.001 0.999 0 0 empty pan7 empty
+-2 -6 0 8 -262144 -1 -1 0 1;
+#X obj 878 502 moonlib/mknob 25 100 0.001 0.999 0 0 empty pan8 empty
+-2 -6 0 8 -262144 -1 -1 0 1;
+#X obj 192 431 bng 32 250 50 0 empty solo1 empty 17 7 0 10 -262144
+-1 -1;
+#X obj 283 431 bng 32 250 50 0 empty solo2 empty 17 7 0 10 -262144
+-1 -1;
+#X obj 373 431 bng 32 250 50 0 empty solo3 empty 17 7 0 10 -262144
+-1 -1;
+#X obj 470 431 bng 32 250 50 0 empty solo4 empty 17 7 0 10 -262144
+-1 -1;
+#X obj 576 431 bng 32 250 50 0 empty solo5 empty 17 7 0 10 -262144
+-1 -1;
+#X obj 675 431 bng 32 250 50 0 empty solo6 empty 17 7 0 10 -262144
+-1 -1;
+#X obj 779 431 bng 32 250 50 0 empty solo7 empty 17 7 0 10 -262144
+-1 -1;
+#X obj 878 431 bng 32 250 50 0 empty solo8 empty 17 7 0 10 -262144
+-1 -1;
+#X obj 192 366 moonlib/mknob 25 100 0.001 0.999 0 0 empty send1 empty
+-2 -6 0 8 -262144 -1 -1 0 1;
+#X obj 283 366 moonlib/mknob 25 100 0.001 0.999 0 0 empty send2 empty
+-2 -6 0 8 -262144 -1 -1 0 1;
+#X obj 373 366 moonlib/mknob 25 100 0.001 0.999 0 0 empty send3 empty
+-2 -6 0 8 -262144 -1 -1 0 1;
+#X obj 470 366 moonlib/mknob 25 100 0.001 0.999 0 0 empty send4 empty
+-2 -6 0 8 -262144 -1 -1 0 1;
+#X obj 576 366 moonlib/mknob 25 100 0.001 0.999 0 0 empty send5 empty
+-2 -6 0 8 -262144 -1 -1 0 1;
+#X obj 675 366 moonlib/mknob 25 100 0.001 0.999 0 0 empty send6 empty
+-2 -6 0 8 -262144 -1 -1 0 1;
+#X obj 779 366 moonlib/mknob 25 100 0.001 0.999 0 0 empty send7 empty
+-2 -6 0 8 -262144 -1 -1 0 1;
+#X obj 878 366 moonlib/mknob 25 100 0.001 0.999 0 0 empty send8 empty
+-2 -6 0 8 -262144 -1 -1 0 1;
+#X obj 192 306 moonlib/mknob 25 100 3101 3200 0 0 empty eqLow1 empty
+-2 -6 0 8 -262144 -1 -1 0 1;
+#X obj 283 306 moonlib/mknob 25 100 3201 3300 0 0 empty eqLow2 empty
+-2 -6 0 8 -262144 -1 -1 0 1;
+#X obj 373 306 moonlib/mknob 25 100 3301 3400 0 0 empty eqLow3 empty
+-2 -6 0 8 -262144 -1 -1 0 1;
+#X obj 470 306 moonlib/mknob 25 100 3401 3500 0 0 empty eqLow4 empty
+-2 -6 0 8 -262144 -1 -1 0 1;
+#X obj 576 306 moonlib/mknob 25 100 3501 3600 0 0 empty eqLow5 empty
+-2 -6 0 8 -262144 -1 -1 0 1;
+#X obj 675 306 moonlib/mknob 25 100 3601 3700 0 0 empty eqLow6 empty
+-2 -6 0 8 -262144 -1 -1 0 1;
+#X obj 779 306 moonlib/mknob 25 100 3701 3800 0 0 empty eqLow7 empty
+-2 -6 0 8 -262144 -1 -1 0 1;
+#X obj 878 306 moonlib/mknob 25 100 3801 3900 0 0 empty eqLow8 empty
+-2 -6 0 8 -262144 -1 -1 0 1;
+#X obj 192 248 moonlib/mknob 25 100 4101 4200 0 0 empty eqMid1 empty
+-2 -6 0 8 -262144 -1 -1 0 1;
+#X obj 283 248 moonlib/mknob 25 100 4201 4300 0 0 empty eqMid2 empty
+-2 -6 0 8 -262144 -1 -1 0 1;
+#X obj 373 248 moonlib/mknob 25 100 4301 4400 0 0 empty eqMid3 empty
+-2 -6 0 8 -262144 -1 -1 0 1;
+#X obj 470 248 moonlib/mknob 25 100 4401 4500 0 0 empty eqMid4 empty
+-2 -6 0 8 -262144 -1 -1 0 1;
+#X obj 576 248 moonlib/mknob 25 100 4501 4600 0 0 empty eqMid5 empty
+-2 -6 0 8 -262144 -1 -1 0 1;
+#X obj 675 248 moonlib/mknob 25 100 4601 4700 0 0 empty eqMid6 empty
+-2 -6 0 8 -262144 -1 -1 0 1;
+#X obj 779 248 moonlib/mknob 25 100 4701 4800 0 0 empty eqMid7 empty
+-2 -6 0 8 -262144 -1 -1 0 1;
+#X obj 878 248 moonlib/mknob 25 100 4801 4900 0 0 empty eqMid8 empty
+-2 -6 0 8 -262144 -1 -1 0 1;
+#X obj 192 191 moonlib/mknob 25 100 5101 5200 0 0 empty eqHi1 empty
+-2 -6 0 8 -262144 -1 -1 0 1;
+#X obj 283 191 moonlib/mknob 25 100 5201 5300 0 0 empty eqHi2 empty
+-2 -6 0 8 -262144 -1 -1 0 1;
+#X obj 373 191 moonlib/mknob 25 100 5301 5400 0 0 empty eqHi3 empty
+-2 -6 0 8 -262144 -1 -1 0 1;
+#X obj 470 191 moonlib/mknob 25 100 5401 5500 0 0 empty eqHi4 empty
+-2 -6 0 8 -262144 -1 -1 0 1;
+#X obj 576 191 moonlib/mknob 25 100 5501 5600 0 0 empty eqHi5 empty
+-2 -6 0 8 -262144 -1 -1 0 1;
+#X obj 675 191 moonlib/mknob 25 100 5601 5700 0 0 empty eqHi6 empty
+-2 -6 0 8 -262144 -1 -1 0 1;
+#X obj 779 191 moonlib/mknob 25 100 5701 5800 0 0 empty eqHi7 empty
+-2 -6 0 8 -262144 -1 -1 0 1;
+#X obj 878 191 moonlib/mknob 25 100 5801 5900 0 0 empty eqHi8 empty
+-2 -6 0 8 -262144 -1 -1 0 1;
+#X obj 1074 511 vsl 15 128 0.001 0.999 0 0 empty mastervol empty 0
+-9 0 10 -262144 -1 -1 0 1;
+#X obj 1003 307 hsl 128 15 0.001 0.999 0 0 empty auxvol empty -2 -8
+0 10 -262144 -1 -1 0 1;
+#X obj 1000 396 bng 32 250 50 0 empty rec empty 17 7 0 10 -262144 -1
+-1;
+#X obj 1067 396 bng 32 250 50 0 empty play empty 17 7 0 10 -262144
+-1 -1;
+#X obj 1134 396 bng 32 250 50 0 empty stop empty 17 7 0 10 -262144
+-1 -1;
+#X obj 192 129 moonlib/mknob 25 100 6101 6200 0 0 empty comp1 empty
+-2 -6 0 8 -262144 -1 -1 0 1;
+#X obj 279 129 moonlib/mknob 25 100 6201 6300 0 0 empty comp2 empty
+-2 -6 0 8 -262144 -1 -1 0 1;
+#X obj 373 129 moonlib/mknob 25 100 6301 6400 0 0 empty comp3 empty
+-2 -6 0 8 -262144 -1 -1 0 1;
+#X obj 470 129 moonlib/mknob 25 100 6401 6500 0 0 empty comp4 empty
+-2 -6 0 8 -262144 -1 -1 0 1;
+#X text 105 131 COMPRESSION;
+#X text 105 200 EQ - HIGH;
+#X text 105 253 EQ - MID;
+#X text 105 304 EQ - LOW;
+#X text 105 371 AUX-SEND;
+#X text 105 438 SOLO;
+#X text 105 508 PAN;
+#X text 105 613 VOLUME;
+#X text 1035 269 SEND VOLUME;
+#X text 1046 670 MASTER VOLUME;
+#X text 992 371 RECORD;
+#X text 1055 370 PLAY/PAUSE;
+#X text 1135 370 STOP;
+#X text 194 717 1;
+#X text 285 717 2;
+#X text 376 717 3;
+#X text 474 717 4;
+#X text 578 717 5;
+#X text 677 717 6;
+#X text 783 717 7;
+#X text 880 717 8;
+#X text 311 36 1 - WAIT FOR CONNECTION;
+#X text 597 30 2 - CONNECT TO DAW;
+#X obj 598 56 bng 74 250 50 0 com empty empty 17 7 0 10 -262144 -1
+-1;
+#X obj 1331 70 main;
+#X obj 1331 34 bng 15 250 50 0 empty com empty 17 7 0 10 -262144 -1
+-1;
+#X text 1331 10 DAW;
+#X connect 90 0 89 0;

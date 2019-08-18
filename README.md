@@ -10,34 +10,31 @@ CSAW aims to remedy limitations of mobile control applications and certain hardw
 ***This project is presented as part of the thesis requirements for the MSc. in Music & Technology, awarded by Cork School of Music.***
 
 
-Software, Drivers & Libraries
-=============================
+## Software, Drivers & Libraries
 (Installations covered in notes below)
--> Arduino IDE
--> Arduino Mega driver 
--> ESP8266 board and library for Arduino IDE
--> Purr Data - Pure Data distribution
--> CNMAT/OSC Arduino library
--> Arduino_Pd Pd abstraction library
+* Arduino IDE
+* Arduino Mega driver 
+* ESP8266 board and library for Arduino IDE
+* Purr Data - Pure Data distribution
+* CNMAT/OSC Arduino library
+* Arduino_Pd Pd abstraction library
 
 
-Repository/Folder Structure:
-============================
+## Repository/Folder Structure
 /
--> camera/ 		: various pictures of circuits, code, controller design etc.
--> daw-files/	: DAW config files and templates for CSAW
--> design/		: design diagrams and other documents
--> documents/	: main thesis submission documents
--> examples/	: example Arduino sketches and Pd patches, referenced in documentation
--> main/		: main CSAW prototype Arduino sketches and Pd patches
+* camera/ 		: various pictures of circuits, code, controller design etc.
+* daw-files/	: DAW config files and templates for CSAW
+* design/		: design diagrams and other documents
+* documents/	: main thesis submission documents
+* examples/	: example Arduino sketches and Pd patches, referenced in documentation
+* main/		: main CSAW prototype Arduino sketches and Pd patches
 
 
-Install Notes
-=============
+## Install Notes
 - A Quick Start Guide accompanies this README with details on getting the controller working instantly (QuickStart.pdf). The steps below outline the process to replicate development, install requirements to enable code expansion on the controller and how to change the prototype build.
 
 I. Arduino:
-	1. Download the Arduino IDE and install: https://www.arduino.cc/en/main/software .
+	Download the Arduino IDE and install: https://www.arduino.cc/en/main/software .
 	2. Connect CSAW's Arduino component via USB. Ensure that the correct board is selected in the IDE: Tools->Board->Arduino/Genuino Mega or Mega 2560
 	3. Check that the correct port is selected under: Tools->Port. If this is greyed out, check that the Arduino is fully plugged in. If it is then there may be a driver issue, as Arduino Mega is known to have certain issues, particularly with Windows 10. Follow Arduino's documentation how to resolve this: https://www.arduino.cc/en/Guide/DriverInstallation 
 	4. Prototype sketches and other code can now be uploaded to Arduino.
@@ -73,8 +70,7 @@ VI. DAW:
 	3. Check once more that actions are being mapped in the Prototype patch and then click the DAW connect button.
 
 
-System Requirements:
-====================
+## System Requirements
 - This system was developed and tested on a Dell Inspiron laptop with the following specifications:
 	* Intel Core i7-8565U CPU @ 1.80GHz 1.99 GHz
 	* 16.0GB installed memory (RAM)

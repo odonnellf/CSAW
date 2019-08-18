@@ -20,7 +20,6 @@ This project folder/repository consists of relevant files for the design and imp
 
 ## Repository/Folder Structure
 /
-* camera/ 		: various pictures of circuits, code, controller design etc.
 * daw-files/	: DAW config files and templates for CSAW
 * design/		: design diagrams and other documents
 * documents/	: main thesis submission documents

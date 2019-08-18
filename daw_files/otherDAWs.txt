@@ -1,0 +1,18 @@
+Other DAWs
+----------
+
+- Several other OSC-capable DAWs are proposed to be integrated with CSAW in the future
+- These will require further configuration to work with the current setup
+
+- For example, to toggle solo functionality for track 1 in Renoise, the DAW requires an OSC message that fits the schema "/renoise/song/track/1/solo"
+- Therefore it will not recognise the "/solo1" message that is currently being sent from Pd
+
+- REAPER messages could be reconfigured to fit the renoise schema since REAPER has no message limitations, however other DAWs will most likely also have their own schemas so this is not ideal
+- As a result, either the original Prototype patches need to be expanded to send several OSC messages for different DAWs (causing a whole lot more network traffic), or else independent patches need to be created on a per-DAW basis
+
+Potential CSAW DAW setups for the future that support Open Sound Control:
+	* Renoise
+	* Ardour
+	* Logic Pro X
+	* Digital Performer
+	* Nuendo

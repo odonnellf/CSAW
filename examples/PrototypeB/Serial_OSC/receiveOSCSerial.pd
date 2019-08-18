@@ -1,0 +1,13 @@
+#N canvas 986 132 850 586 10;
+#X obj 50 236 print;
+#X obj 50 34 import mrpeach;
+#X text 233 36 # import 'mrpeach' package for externals - network and
+OSC;
+#X text 233 124 # receive UDP packets on port 8888 (defined in ESP
+code);
+#X text 233 181 # unpack OSC message so it can be printed to Pd console
+;
+#X obj 50 124 mrpeach/udpreceive 8888;
+#X obj 50 180 mrpeach/unpackOSC;
+#X connect 5 0 6 0;
+#X connect 6 0 0 0;

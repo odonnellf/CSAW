@@ -1,0 +1,43 @@
+#N canvas 0 0 1892 963 10;
+#X msg 82 90 open \$1;
+#X msg 120 122 devices;
+#X floatatom 82 213 5 0 0 0 - - -, f 5;
+#X obj 459 355 import mrpeach;
+#X msg 459 414 disconnect;
+#X obj 82 491 udpsend;
+#X msg 82 324 send /test \$1;
+#X obj 82 372 packOSC;
+#X obj 82 170 comport \$1 115200;
+#X obj 82 33 hradio 24 1 0 8 empty empty empty 0 -8 0 10 -262144 -1
+-1 0;
+#X floatatom 26 300 5 0 0 0 - - -, f 5;
+#X text 311 38 # Select COM port no.;
+#X text 84 12 0;
+#X text 109 12 1;
+#X text 134 12 2;
+#X text 159 12 3;
+#X text 184 12 ...;
+#X text 151 89 # Open port;
+#X text 183 124 # List device on port;
+#X text 199 169 # Establish serial interface with baudrate;
+#X text 180 325 # Send OSC message '/test' with value;
+#X text 146 372 # Pack as OSC message;
+#X text 147 493 # Send UDP packet;
+#X text 619 384 # Connect to IP on port no.;
+#X text 459 325 # Import mrpeach package for network and OSC externals
+;
+#X msg 459 382 connect localhost 8888;
+#X obj 82 260 autoscale 0.001 0.999;
+#X text 127 281 # Scale value between 0.001 and 0.99 (1 resets pot)
+;
+#X connect 0 0 8 0;
+#X connect 1 0 8 0;
+#X connect 2 0 26 0;
+#X connect 4 0 5 0;
+#X connect 6 0 7 0;
+#X connect 7 0 5 0;
+#X connect 8 0 2 0;
+#X connect 9 0 0 0;
+#X connect 25 0 5 0;
+#X connect 26 0 6 0;
+#X connect 26 0 10 0;

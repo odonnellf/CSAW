@@ -1,0 +1,61 @@
+#N canvas 921 98 999 707 10;
+#X obj 90 24 hradio 21 1 0 8 empty empty empty 0 -8 0 10 -262144 -1
+-1 0;
+#X msg 90 84 open \$1;
+#X obj 90 142 comport \$1 115200;
+#X msg 160 84 close;
+#X msg 26 84 devices;
+#X obj 90 188 serial_print;
+#X text 314 28 # Open COM port;
+#X text 344 445 # Network and OSC functions;
+#X text 402 297 # Toggle handled by REAPER action;
+#X floatatom 91 236 5 0 0 0 - - -, f 5;
+#X obj 91 317 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144 -1
+-1;
+#X obj 205 317 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144
+-1 -1;
+#X obj 319 317 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144
+-1 -1;
+#X msg 91 368 send /rec;
+#X obj 240 432 import mrpeach;
+#X msg 240 516 disconnect;
+#X msg 240 474 connect localhost 8888;
+#X text 402 272 # send message based on number;
+#X msg 177 370 send /play 1;
+#X msg 187 392 send /play 0;
+#X msg 319 368 send /stop 1;
+#X obj 91 487 packOSC;
+#X obj 91 550 udpsend;
+#X text 431 376 # 2 messages required for Play/Pause function to operate
+correctly, f 37;
+#X obj 91 276 select 0.91;
+#X obj 205 276 select 0.92;
+#X obj 319 276 select 0.93;
+#X text 206 188 # Import from 'Arduino_Pd' and copy to directory;
+#X text 93 52 0;
+#X text 113 52 1;
+#X text 134 52 2;
+#X text 156 52 ...;
+#X connect 0 0 1 0;
+#X connect 1 0 2 0;
+#X connect 2 0 5 0;
+#X connect 3 0 2 0;
+#X connect 4 0 2 0;
+#X connect 5 0 9 0;
+#X connect 9 0 24 0;
+#X connect 9 0 25 0;
+#X connect 9 0 26 0;
+#X connect 10 0 13 0;
+#X connect 11 0 18 0;
+#X connect 11 0 19 0;
+#X connect 12 0 20 0;
+#X connect 13 0 21 0;
+#X connect 15 0 22 0;
+#X connect 16 0 22 0;
+#X connect 18 0 21 0;
+#X connect 19 0 21 0;
+#X connect 20 0 21 0;
+#X connect 21 0 22 0;
+#X connect 24 0 10 0;
+#X connect 25 0 11 0;
+#X connect 26 0 12 0;

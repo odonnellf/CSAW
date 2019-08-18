@@ -1,0 +1,63 @@
+#N canvas 618 19 1234 848 10;
+#X obj 235 455 import mrpeach;
+#X obj 100 500 packOSC;
+#X msg 235 517 disconnect;
+#X msg 235 398 send /compratio \$1;
+#X msg 100 398 send /compthres \$1;
+#X floatatom 100 242 5 0 0 0 - - -, f 5;
+#X msg 100 84 open \$1;
+#X msg 39 84 devices;
+#X floatatom 100 362 5 0 0 0 - - -, f 5;
+#X msg 377 398 send /compout \$1;
+#X floatatom 235 362 5 0 0 0 - - -, f 5;
+#X floatatom 377 362 5 0 0 0 - - -, f 5;
+#X msg 162 84 close;
+#X obj 100 137 comport \$1 115200;
+#X obj 100 21 hradio 21 1 0 8 empty empty empty 0 -8 0 10 -262144 -1
+-1 0;
+#X obj 100 173 serial_print;
+#X msg 235 488 connect localhost 8888;
+#X obj 100 312 autoscale 0.5 0.015, f 12;
+#X obj 100 209 split 0 100;
+#X obj 377 312 autoscale 0.5 1.125, f 10;
+#X obj 235 312 autoscale 1e-005 0.03, f 12;
+#X text 286 24 # Open COM port;
+#X text 286 207 # split redundant for this example but utilised with
+multiple pots/compressors, f 49;
+#X text 490 309 # Different compressor parameters with different ranges
+(based on Yamaha MG series 1-knob compressors), f 53;
+#X text 490 362 # Split value into 3 separate OSC messages for the
+3 parameters being controlled, f 44;
+#X text 490 472 # Networking and OSC functions;
+#X text 286 171 # 'serial_print' function allows decoding of Arduino
+serial print functions - import from 'Arduino_Pd', f 54;
+#X text 105 47 0;
+#X text 125 47 1;
+#X text 146 47 2;
+#X text 165 47 ...;
+#X text 100 283 # THRESHOLD;
+#X obj 100 559 mrpeach/udpsend;
+#X text 240 283 # RATIO;
+#X text 380 283 # OUTPUT GAIN;
+#X connect 1 0 32 0;
+#X connect 2 0 32 0;
+#X connect 3 0 1 0;
+#X connect 4 0 1 0;
+#X connect 5 0 17 0;
+#X connect 5 0 19 0;
+#X connect 5 0 20 0;
+#X connect 6 0 13 0;
+#X connect 7 0 13 0;
+#X connect 8 0 4 0;
+#X connect 9 0 1 0;
+#X connect 10 0 3 0;
+#X connect 11 0 9 0;
+#X connect 12 0 13 0;
+#X connect 13 0 15 0;
+#X connect 14 0 6 0;
+#X connect 15 0 18 0;
+#X connect 16 0 32 0;
+#X connect 17 0 8 0;
+#X connect 18 0 5 0;
+#X connect 19 0 11 0;
+#X connect 20 0 10 0;

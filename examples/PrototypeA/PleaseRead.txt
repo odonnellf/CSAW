@@ -1,0 +1,5 @@
+
+NOTE: PrototypeA and example patches require a Pd abstraction patch 'serial_print' to operate
+
+1. Download 'serial_print.pd' patch from Arduino_Pd: https://github.com/alexdrymonitis/Arduino_Pd
+2. Copy the file into each folder directory so the Pd patch can recognise it

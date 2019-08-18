@@ -1,11 +1,9 @@
 # CSAW
-(C)ontrol (S)urface using (A)rduino (W)ireless capabilities
+## (C)ontrol (S)urface using (A)rduino (W)ireless capabilities
 
 Audio control surfaces are practical tools for editing and mixing in a digital audio workstation. Despite recent technological advancements, however, there is a lack of robust physical commercial controllers with seamless wireless functionality.
 
-This project folder/repository consists of relevant files for the design and implementation of CSAW – an audio Control Surface built using the Arduino platform and Wireless capabilities.
-
-CSAW aims to remedy limitations of mobile control applications and certain hardware controllers through devising a proof of concept control surface and software platform using sophisticated open-source applications and wireless communication protocols.
+This project folder/repository consists of relevant files for the design and implementation of CSAW – an audio Control Surface built using the Arduino platform and Wireless capabilities. CSAW aims to remedy limitations of mobile control applications and certain hardware controllers through devising a proof of concept control surface and software platform using sophisticated open-source applications and wireless communication protocols.
 
 ***This project is presented as part of the thesis requirements for the MSc. in Music & Technology, awarded by Cork School of Music.***
 

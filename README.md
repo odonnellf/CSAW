@@ -63,7 +63,7 @@ A Quick Start Guide accompanies this README with details on getting the controll
 ### VI. DAW:
 	(***For wireless/PrototypeB, connect to the network defined by the ESP8266 sketch and ensure the PC has the defined IP address.***)
 	1. Open a supported DAW and import the config file. Alternatively, open the DAW template.
-	2. This will contain all tracks, plugins/FX, OSC control surface and mappings, etc. Double-check that the port matches the settings in the Prototype Pd patch.
+	2. This will contain all tracks, plugins/FX, OSC control surface etc. Double-check that the port matches the settings in the Prototype Pd patch. Import the REAPER key mapping file from the Action List menu.
 	3. Check once more that actions are being mapped in the Prototype patch and then click the DAW connect button.
 
 

@@ -1,0 +1,54 @@
+SCR 4 0 RS1ee9bb229dabffe151848d7efa3c10f748e1a1cf "Custom: lyrics.lua" Cockos/lyrics.lua
+SCR 4 32060 RS7d3c_1ee9bb229dabffe151848d7efa3c10f748e1a1cf "Custom: lyrics.lua" Cockos/lyrics.lua
+SCR 4 0 RS1ee9bb229dabffe151848d7efa3c10f748e1a1cf "Custom: lyrics.lua" Cockos/lyrics.lua
+SCR 4 32060 RS7d3c_1ee9bb229dabffe151848d7efa3c10f748e1a1cf "Custom: lyrics.lua" Cockos/lyrics.lua
+KEY 1 32807 0 0
+KEY 1 13 0 0
+KEY 9 32 0 0
+KEY 255 3816 0 0
+KEY 1 83 0 0
+KEY 1 68 0 0
+KEY 1 81 86 0
+KEY 1 85 95 0
+KEY 1 32806 40115 0
+KEY 1 32808 40116 0
+KEY 1 32805 40286 0
+KEY 5 66 40344 0
+OSC "/Test4" 0 0 901
+OSC "/auxvol" 0 0 84
+OSC "/mastervol" 0 0 12
+OSC "/pan1" 0 0 21
+OSC "/pan2" 0 0 29
+OSC "/pan3" 0 0 37
+OSC "/pan4" 0 0 45
+OSC "/pan5" 0 0 53
+OSC "/pan6" 0 0 61
+OSC "/pan7" 0 0 69
+OSC "/pan8" 0 0 77
+OSC "/play" 0 0 40044
+OSC "/rec" 0 0 1013
+OSC "/send1" 0 0 100
+OSC "/send2" 0 0 108
+OSC "/send3" 0 0 116
+OSC "/send4" 0 0 124
+OSC "/send5" 0 0 132
+OSC "/send6" 0 0 140
+OSC "/send7" 0 0 148
+OSC "/send8" 0 0 156
+OSC "/solo1" 0 0 23
+OSC "/solo2" 0 0 31
+OSC "/solo3" 0 0 39
+OSC "/solo4" 0 0 47
+OSC "/solo5" 0 0 55
+OSC "/solo6" 0 0 63
+OSC "/solo7" 0 0 71
+OSC "/solo8" 0 0 79
+OSC "/stop" 0 0 40042
+OSC "/vol1" 0 0 20
+OSC "/vol2" 0 0 28
+OSC "/vol3" 0 0 36
+OSC "/vol4" 0 0 44
+OSC "/vol5" 0 0 52
+OSC "/vol6" 0 0 60
+OSC "/vol7" 0 0 68
+OSC "/vol8" 0 0 76

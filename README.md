@@ -1,5 +1,5 @@
 # CSAW
-## (C)ontrol (S)urface using (A)rduino (W)ireless capabilities
+## (C)ontrol (S)urface using (A)rduino & (W)ireless capabilities
 
 Audio control surfaces are practical tools for editing and mixing in a digital audio workstation. Despite recent technological advancements, however, there is a lack of robust physical commercial controllers with seamless wireless functionality.
 
